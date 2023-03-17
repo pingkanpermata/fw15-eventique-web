@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(../Poppins/Poppins-Regular.ttf);
+}
+
+main {
+  display: flex;
+}
+
+.side-content {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(43, 21, 107, 0.8))), url("../img/bg.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+@media (max-width:1024px) {
+  .side-content {
+    height: 750px;
+  }
+  .side-img {
+    margin-top: 45%;
+  }
+  .main-header {
+    height: 750px;
+  }
+  .header-logo {
+    margin-left: 50px;
+    margin-top: 100px;
+  }
+  .title-text {
+    margin-left: 50px;
+    margin-top: 0;
+  }
+  .has-account-text {
+    margin-left: 50px;
+    margin-top: 15px;
+  }
+  .log-in {
+    margin-left: 10px;
+  }
+  .form {
+    margin-top: 0;
+  }
+  .form-container {
+    margin-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .info {
+    margin-left: 100px;
+    height: fit-content;
+    margin-bottom: 100px;
+  }
+  .logo-img2 {
+    margin-bottom: 10px;
+  }
+  .sosmed-icon {
+    margin-top: 10px;
+    margin-bottom: 65px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .side-content {
+    height:600px;
+  }
+  .main-header {
+    height: 600px;
+  }
+  .header-logo {
+    margin-left: 20px;
+    margin-top: 50px;
+  }
+  .title-text {
+    margin-left: 25px;
+    margin-top: 20px;
+  }
+  .has-account-text {
+    margin-left: 25Px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .log-in {
+    margin-left: 5px;
+  }
+  .form-container {
+    margin-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .form-input {
+    height: 45px;
+    border-radius: 15px;
+  }
+  .button-signup {
+    margin-top: 5px;
+    height: 45px;
+    border-radius: 15px;
+  }
+  .logo-img2 {
+    height: 50px;
+    margin-top: 15px;
+  }
+  .info {
+    height: max-content;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 12px;
+  }
+  .sosmed-icon {
+    height: 20px;
+    width: 20px;
+  }
+  .footer-text {
+    font-size: 12px;
+  }
+  .right-text-head {
+    font-size: 12px;
+    margin-top: 0;
+  }
+  .right-text {
+    font-size: 11px;
+  }
+  .body {
+    margin: 20px;
+  }
+}
+
+@media (max-width:425px) {
+  .side-content {
+    display: none;
+  }
+  .info {
+    display: none;
+  }
+  .form-container {
+    margin-top: 30px;
+  }
+  .form-input {
+    height: 50px;
+  }
+  .button-signup {
+    height: 50px;
+  }
+  
+}
