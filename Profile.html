@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <title>Profile</title>
+</head>
+
+<body>
+    <nav class="flex w-full items-center justify-between px-10 py-4">
+        <a href="Home.html">
+            <div class="flex items-center ">
+                <img class="w-15 h-11" src="./assets/img/event_black.png" alt="logo">
+            </div>
+        </a>
+        <div class="hidden md:block basis:1/2">
+            <ul class="flex justify-center gap-5 lg:gap-12 text-sm text-[#FB1494] font-semibold tracking-[1px]">
+                <li class="cursor-pointer border-b-2 border-[#FB1494]"><a href="Home.html">Home</a></li>
+                <li class="cursor-pointer"><a href="CreateEvent.html">Create Event</a></li>
+                <li class="cursor-pointer"><a href="#">Location</a></li>
+            </ul>
+        </div>
+        <div class="hidden md:flex">
+            <div>
+                <img class="w-11 h-11 mr-2 object-cover rounded-full border-2 border-white"
+                    src="./assets/img/profile.png" alt="photo-profile">
+            </div>
+            <div class="self-center" style="font-weight: 600; font-size: 16px; letter-spacing: 1px;">Jhon Tomson
+            </div>
+        </div>
+    </nav>
+    <main class="px-[30px] md:flex md:bg-[#ED65AB] p-[20px] md:px-[75px] md:py-[75px]">
+        <aside class="hidden md:block w-full md:w-[370px] md:flex-initial">
+            <div class="flex items-center gap-3 mb-[56px]">
+                <div>
+                    <img src="./assets/img/profile.png" alt="photo-profile">
+                </div>
+                <div>
+                    <h1 style="font-weight: 600; font-size: 14px; letter-spacing: 1px;">Jhon Thomson</h1>
+                    <p>Entrepreneur, ID</p>
+                </div>
+            </div>
+            <div style="font-weight: 600; font-size: 14px; letter-spacing: 1px;">
+                <ul>
+                    <li class="flex gap-3 py-3 text-white"><i data-feather="user"></i><a href="Profile.html">Profile</a></li>
+                    <li class="mx-5 py-3">
+                        <ul>
+                            <li class="flex gap-3 py-3"><i data-feather="credit-card"></i>Card</li>
+                            <li class="flex gap-3 py-3"><i data-feather="edit-3"></i><a href="#"> Edit
+                                    Profile</a></li>
+                            <li class="flex gap-3 py-3"><i data-feather="unlock"></i><a href="#">Change Password</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="flex gap-3 py-3"><i data-feather="plus-circle"></i><a href="CreateEvent.html">Create Event</a></li>
+                    <li class="flex gap-3 py-3"><i data-feather="list"></i><a href="#">My Booking</a>
+                    </li>
+                    <li class="flex gap-3 py-3"><i data-feather="heart"></i><a href="#">My Wishlist</a>
+                    </li>
+                    <li class="flex gap-3 py-3"><i data-feather="settings"></i>Setting</li>
+                    <li class="flex gap-3 py-3"><i data-feather="log-out"></i><a href="index.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <article
+            class="flex flex-col-reverse md:flex-row inline-block w-full bg-white p-[20px] md:px-[100px] md:py-[70px] rounded-2xl">
+            <div id="leftside" class="relative md:static flex-1">
+                <div class="mb-[212px] md:mb-[50px]" style="font-family: 'Poppins'; font-weight: 600; font-size: 20px;">
+                    Profile</div>
+                <div class="my-[30px] md:my-0 block md:flex items-center"
+                    style="font-family: 'Poppins'; font-weight: 400; font-size: 14px;">
+                    <div class="w-[153px]">Name</div>
+                    <div class="border-2 rounded-2xl h-[55px] text-left w-full px-[20px] py-[17px] text-[#777777] ">Jhon
+                        Tomson</div>
+                </div>
+                <div class="my-[30px] md:my-0 block md:flex items-center"
+                    style="font-family: 'Poppins'; font-weight: 400; font-size: 14px;">
+                    <div class="w-[153px]">Username</div>
+                    <div class="h-[55px] text-left w-full md:px-[20px] py-[17px] text-[#777777] ">@jhont0 <a href=" "
+                            class="text-[#FB1494] px-[10px]">Edit</a></div>
+                </div>
+                <div class="my-[30px] md:my-0 block md:flex items-center"
+                    style="font-family: 'Poppins'; font-weight: 400; font-size: 14px;">
+                    <div class="w-[153px]">Email</div>
+                    <div class="h-[55px] text-left w-full md:px-[20px] py-[17px] text-[#777777] ">jhont0@mail.com <a
+                            href=" " class="text-[#FB1494] px-[10px]">Edit</a></div>
+                </div>
+                <div class="my-[30px] md:my-0 block md:flex items-center"
+                    style="font-family: 'Poppins'; font-weight: 400; font-size: 14px;">
+                    <div class="w-[153px]">Phone Number</div>
+                    <div class="h-[55px] text-left w-full md:px-[20px] py-[17px] text-[#777777] ">08123456789 <a
+                            href=" " class="text-[#FB1494] px-[10px]">Edit</a></div>
+                </div>
+                <div class="my-[30px] md:my-0 block md:flex items-center"
+                    style="font-family: 'Poppins'; font-weight: 400; font-size: 14px;">
+                    <div class="w-[153px]">Gender</div>
+                    <div class="flex gap-10 h-[55px] text-left w-full md:px-[20px] py-[17px] text-[#777777] ">
+                        <div class="flex">
+                            <input type="radio" name="gender">
+                            <p class="pl-[5px]">Male</p>
+                        </div>
+                        <div class="flex">
+                            <input type="radio" name="gender">
+                            <p class="pl-[5px]">Female</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-[30px] md:my-0 block md:flex items-center"
+                    style="font-family: 'Poppins'; font-weight: 400; font-size: 14px;">
+                    <div class="w-[153px]">Profession</div>
+                    <div
+                        class="flex justify-between border-2 rounded-2xl h-[55px] text-left w-full px-[20px] py-[17px] text-[#777777] ">
+                        Enterpreneur
+                        <div><i data-feather="chevron-down"></i></div>
+                    </div>
+                </div>
+                <div class="my-[30px] md:my-3 block md:flex items-center"
+                    style="font-family: 'Poppins'; font-weight: 400; font-size: 14px;">
+                    <div class="w-[153px]">Nationality</div>
+                    <div
+                        class="flex justify-between border-2 rounded-2xl h-[55px] text-left w-full px-[20px] py-[17px] text-[#777777] ">
+                        Indonesia
+                        <div><i data-feather="chevron-down"></i></div>
+                    </div>
+                </div>
+                <div class="my-[30px] block md:flex items-center"
+                    style="font-family: 'Poppins'; font-weight: 400; font-size: 14px;">
+                    <div class="w-[153px]">Birthday Date</div>
+                    <div class="h-[55px] text-left w-full md:px-[20px] py-[17px] text-[#777777] "><a href=" ">24</a>/<a
+                            href="#" class="underline-offset-1">10</a>/<a href=" ">2000</a> <a href=" "
+                            class="text-[#FB1494] px-[10px]">Edit</a></div>
+                </div>
+                <button type="input"
+                    class="h-[61px] w-full md:w-3/12 rounded-2xl md:my-[50px] bg-[#FB1494] shadow-lg text-white"
+                    style="font-weight: 600; font-size: 16px;">Save</button>
+            </div>
+
+            <hr class="hidden md:block h-[314px] border-2 rounded-2xl mx-[50px]">
+
+            <div id="rightside" class="text-center absolute top-[180px] left-[125px] md:static">
+                <div
+                    class="relative inline-block cursor-pointer truncate w-[137px] h-[137px]">
+                    <img class="absolute object-cover rounded-full h-full w-full p-[6px]"
+                        src="./assets/img/profile.png" alt="change-photo">
+                    <div class="absolute top-[50px] left-[50px] text-white"><i data-feather="camera"></i></div>
+                </div>
+                <button type="submit"
+                    class="hidden md:block mt-[50px] border-2 border-[#FB1494] w-full h-[40px] text-[#F23F9F] rounded-2xl hover:text-[#ED65AB] hover:border-[#ED65AB]"
+                    style="font-size: 16px; font-weight: 600; letter-spacing: 1px;">Choose Photo</button>
+                <ul class="hidden md:block my-[25px] text-left"
+                    style="font-size: 12px; font-weight: 400; letter-spacing: 1px;">
+                    <li>Image size: max, 2 MB</li>
+                    <li>Image formats: .JPG, .JPEG, .PNG</li>
+                </ul>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="w-[100%] flex flex-col items-start md:items-center justify-start md:justify-center px-9 md:px-11 xl:px-60 2xl:px-80">
+        <div class="w-[100%] flex flex-col md:flex-row justify-center md:justify-between gap-8 lg:gap-32 pt-11 mb-7">
+            <div>
+                <div class="flex justify-start items-center w-auto md:w-48 gap-3.5">
+                    <div class="block">
+                        <img src="./assets/img/event_black.png" alt="" />
+                    </div>
+                </div>
+                <div class="mt-7 text-sm text-[#373a42] font-semibold tracking-[1px]">Find events you love with our!
+                </div>
+                <div class="flex items-center gap-5 md:gap-0.5 lg:gap-5 mt-4">
+                    <div>
+                        <a href="#"> <img src="./assets/img/fb.png" alt="" /></a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="./assets/img/wa.png" alt="" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="./assets/img/ig.png" alt="" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="./assets/img/tw.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5 mt-2">
+                <div class="text-base text-[#373a42] font-semibold tracking-[1px]">Eventique</div>
+                <div>
+                    <ul class="flex flex-col gap-4 text-sm text-[#c1c5d0] font-medium tracking-[1px]">
+                        <li>
+                            <a class="hover:text-[#373a42]" href="#"> About Us </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-[#373a42]" href="#"> Features </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-[#373a42]" href="#"> Blog </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-[#373a42]" href="#"> Payment </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-[#373a42]" href="#"> Mobile App </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5 mt-2">
+                <div class="text-base text-[#373a42] font-semibold tracking-[1px]">Features</div>
+                <div>
+                    <ul class="flex flex-col gap-4 text-sm text-[#c1c5d0] font-medium tracking-[1px]">
+                        <li>
+                            <a class="hover:text-[#373a42]" href="#">Booking</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-[#373a42]" href="#">Create Event</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-[#373a42]" href="#">Discover</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-[#373a42]" href="#">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5 mt-2">
+                <div class="text-base text-[#373a42] font-semibold tracking-[1px]">Company</div>
+                <div>
+                    <ul class="flex flex-col gap-4 text-sm text-[#c1c5d0] font-medium tracking-[1px]">
+                        <li>
+                            <a class="hover:text-[#373a42]" href="#">Partnership</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-[#373a42]" href="#">Help</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-[#373a42]" href="#">Terms of Service</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-[#373a42]" href="#">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-[#373a42]" href="#">Sitemap</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="md:self-start flex-1 my-7 text-base text-[#5a7184] font-semibold tracking-[1px]">&copy; 2023 Wetick
+            All Rights Reserved</div>
+    </footer>
+    <script>
+        feather.replace()
+    </script>
+</body>
+
+</html>

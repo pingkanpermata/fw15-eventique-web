@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <title>Detail Event</title>
+</head>
+
+<body>
+    <nav class="flex w-full items-center justify-between px-10 py-4">
+        <a href="Home.html">
+            <div class="flex items-center ">
+                <img class="w-30 h-10" src="./assets/img/event_black.png" alt="logo">
+            </div>
+        </a>
+        <div class="hidden md:block basis:1/2">
+            <ul class="flex justify-center gap-5 lg:gap-12 text-sm text-[#FB1494] font-semibold tracking-[1px]">
+                <li class="cursor-pointer border-b-2 border-[#FB1494]"><a href="index.html">Home</a></li>
+                <li class="cursor-pointer"><a href="#">Create Event</a></li>
+                <li class="cursor-pointer"><a href="#">Location</a></li>
+            </ul>
+        </div>
+        <a href="profile.html">
+            <div class="hidden md:flex">
+                <div>
+                    <img class="w-11 h-11 mr-2 object-cover rounded-full border-2 border-white"
+                        src="./assets/img/profile.png" alt="photo-profile">
+                </div>
+                <div class="self-center" style="font-weight: 600; font-size: 16px; letter-spacing: 1px;">Jhon Tomson
+                </div>
+            </div>
+        </a>
+    </nav>
+    <main class="px-[30px] md:flex md:bg-[#ED65AB] p-[20px] md:px-[75px] md:py-[75px]">
+        <aside class="hidden md:block w-full md:w-[370px] md:flex-initial">
+            <div class="flex items-center gap-3 mb-[56px]">
+                <div>
+                    <img src="./assets/img/profile.png" alt="photo-profile">
+                </div>
+                <div>
+                    <h1 style="font-weight: 600; font-size: 14px; letter-spacing: 1px;">Jhon Thomson</h1>
+                    <p>Entrepreneur, ID</p>
+                </div>
+            </div>
+            <div style="font-weight: 600; font-size: 14px; letter-spacing: 1px;">
+                <ul>
+                    <li class="flex gap-3 py-3"><i data-feather="user"></i><a href="Profile.html">Profile</a></li>
+                    <li class="mx-5 py-3">
+                        <ul>
+                            <li class="flex gap-3 py-3"><i data-feather="credit-card"></i>Card</li>
+                            <li class="flex gap-3 py-3"><i data-feather="edit-3"></i><a href="#"> Edit
+                                    Profile</a></li>
+                            <li class="flex gap-3 py-3"><i data-feather="unlock"></i><a
+                                    href="#">Change Password</a></li>
+                        </ul>
+                    </li>
+                    <li class="flex gap-3 py-3 text-white"><i data-feather="plus-circle"></i><a href="CreateEvent.html">Create Event</a></li>
+                    <li class="flex gap-3 py-3"><i data-feather="list"></i><a href="#">My Booking</a>
+                    </li>
+                    <li class="flex gap-3 py-3"><i data-feather="heart"></i><a href="#">My Wishlist</a>
+                    </li>
+                    <li class="flex gap-3 py-3"><i data-feather="settings"></i>Setting</li>
+                    <li class="flex gap-3 py-3"><i data-feather="log-out"></i><a href="index.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <article class="inline-block w-full bg-white p-[20px] md:px-[100px] md:py-[70px] rounded-2xl flex-1">
+            <div class="md:flex md:justify-between mb-6">
+                <div class="mb-[30px]" style="font-weight: 600; font-size: 20px; letter-spacing: 1px;">Manage Event
+                </div>
+                <div style="font-weight: 400; font-size: 14px; letter-spacing: 1px;">
+                    <button
+                        class="px-5 rounded-2xl bg-[#ED65AB] flex gap-3 py-3 w-[150px] md:w-full text-[#535353]">Create</button>
+                </div>
+            </div>
+            <div class="flex gap-x-10">
+                <div class="self-center">
+                    <p style="font-weight: 600; font-size: 20px; letter-spacing: 1px;" class="text-[#FB1494]">15</p>
+                    <p style="font-weight: 400; font-size: 14px; letter-spacing: 1px;" class="text-[#C1C5D0]">Wed</p>
+                </div>
+                <div>
+                    <h1 class="pb-2" style="font-weight: 600; font-size: 24px; letter-spacing: 1px;">Sights & Sounds
+                        Exhibition</h1>
+                    <p class="pb-2" style="font-weight: 400; font-size: 14px; letter-spacing: 1px;">Jakarta, Indonesia
+                    </p>
+                    <p class="pb-2" style="font-weight: 400; font-size: 14px; letter-spacing: 1px;">Wed, 15 Nov, 4:00 PM
+                    </p>
+                    <ul class="flex cursor-pointer gap-3 pt-[10px]">
+                        <li class="text-[#FB1494] hover:text-[#ED65AB]" style="font-weight: 600; font-size: 14px;"><a
+                                href=" ">Update</a></li>
+                        <li class="text-[#FB1494] hover:text-[#ED65AB]" style="font-weight: 600; font-size: 14px;"><a
+                                href=" ">Detail</a></li>
+                        <li class="text-[#FB1494] hover:text-[#ED65AB]" style="font-weight: 600; font-size: 14px;"><a
+                                href=" ">Delete</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="w-full my-6">
+            <div class="flex gap-x-10">
+                <div class="self-center">
+                    <p style="font-weight: 600; font-size: 20px; letter-spacing: 1px;" class="text-[#FB1494]">15</p>
+                    <p style="font-weight: 400; font-size: 14px; letter-spacing: 1px;" class="text-[#C1C5D0]">Wed</p>
+                </div>
+                <div>
+                    <h1 class="pb-2" style="font-weight: 600; font-size: 24px; letter-spacing: 1px;">Sights & Sounds
+                        Exhibition</h1>
+                    <p class="pb-2" style="font-weight: 400; font-size: 14px; letter-spacing: 1px;">Jakarta, Indonesia
+                    </p>
+                    <p class="pb-2" style="font-weight: 400; font-size: 14px; letter-spacing: 1px;">Wed, 15 Nov, 4:00 PM
+                    </p>
+                    <ul class="flex cursor-pointer gap-3 pt-[10px]">
+                        <li class="text-[#FB1494] hover:text-[#ED65AB]" style="font-weight: 600; font-size: 14px;"><a
+                                href=" ">Detail</a></li>
+                        <li class="text-[#FB1494] hover:text-[#ED65AB]" style="font-weight: 600; font-size: 14px;"><a
+                                href=" ">Update</a></li>
+                        <li class="text-[#FB1494] hover:text-[#ED65AB]" style="font-weight: 600; font-size: 14px;"><a
+                                href=" ">Delete</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="w-full my-6">
+            <div class="flex gap-x-10">
+                <div class="self-center">
+                    <p style="font-weight: 600; font-size: 20px; letter-spacing: 1px;" class="text-[#FB1494]">15</p>
+                    <p style="font-weight: 400; font-size: 14px; letter-spacing: 1px;" class="text-[#C1C5D0]">Wed</p>
+                </div>
+                <div>
+                    <h1 class="pb-2" style="font-weight: 600; font-size: 24px; letter-spacing: 1px;">Sights & Sounds
+                        Exhibition</h1>
+                    <p class="pb-2" style="font-weight: 400; font-size: 14px; letter-spacing: 1px;">Jakarta, Indonesia
+                    </p>
+                    <p class="pb-2" style="font-weight: 400; font-size: 14px; letter-spacing: 1px;">Wed, 15 Nov, 4:00 PM
+                    </p>
+                    <ul class="flex cursor-pointer gap-3 pt-[10px]">
+                        <li class="text-[#FB1494] hover:text-[#ED65AB]" style="font-weight: 600; font-size: 14px;"><a
+                                href=" ">Detail</a></li>
+                        <li class="text-[#FB1494] hover:text-[#ED65AB]" style="font-weight: 600; font-size: 14px;"><a
+                                href=" ">Update</a></li>
+                        <li class="text-[#FB1494] hover:text-[#ED65AB]" style="font-weight: 600; font-size: 14px;"><a
+                                href=" ">Delete</a></li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="w-[100%] flex flex-col items-start md:items-center justify-start md:justify-center px-9 md:px-11 xl:px-60 2xl:px-80">
+        <div class="w-[100%] flex flex-col md:flex-row justify-center md:justify-between gap-8 lg:gap-32 pt-11 mb-7">
+            <div>
+                <div class="flex justify-start items-center w-auto md:w-48 gap-3.5">
+                    <div class="block">
+                        <img src="./assets/img/event_black.png" alt="" />
+                    </div>
+                </div>
+                <div class="mt-7 text-sm text-[#373a42] font-semibold tracking-[1px]">Find events you love with our!
+                </div>
+                <div class="flex items-center gap-5 md:gap-0.5 lg:gap-5 mt-4">
+                    <div>
+                        <a href="#"> <img src="./assets/img/fb.png" alt="" /></a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="./assets/img/wa.png" alt="" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="./assets/img/ig.png" alt="" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="./assets/img/tw.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5 mt-2">
+                <div class="text-base text-[#373a42] font-semibold tracking-[1px]">Eventique</div>
+                <div>
+                    <ul class="flex flex-col gap-4 text-sm text-[#c1c5d0] font-medium tracking-[1px]">
+                        <li>
+                            <a class="hover:text-[#373a42]" href="#"> About Us </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-[#373a42]" href="#"> Features </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-[#373a42]" href="#"> Blog </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-[#373a42]" href="#"> Payment </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-[#373a42]" href="#"> Mobile App </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5 mt-2">
+                <div class="text-base text-[#373a42] font-semibold tracking-[1px]">Features</div>
+                <div>
+                    <ul class="flex flex-col gap-4 text-sm text-[#c1c5d0] font-medium tracking-[1px]">
+                        <li>
+                            <a class="hover:text-[#373a42]" href="#">Booking</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-[#373a42]" href="#">Create Event</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-[#373a42]" href="#">Discover</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-[#373a42]" href="#">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5 mt-2">
+                <div class="text-base text-[#373a42] font-semibold tracking-[1px]">Company</div>
+                <div>
+                    <ul class="flex flex-col gap-4 text-sm text-[#c1c5d0] font-medium tracking-[1px]">
+                        <li>
+                            <a class="hover:text-[#373a42]" href="#">Partnership</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-[#373a42]" href="#">Help</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-[#373a42]" href="#">Terms of Service</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-[#373a42]" href="#">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-[#373a42]" href="#">Sitemap</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="md:self-start flex-1 my-7 text-base text-[#5a7184] font-semibold tracking-[1px]">&copy; 2023 Wetick
+            All Rights Reserved</div>
+    </footer>
+    <script>
+        feather.replace()
+    </script>
+</body>
+
+</html>
