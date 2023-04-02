@@ -9,14 +9,28 @@ body {
 /* sign up & sign in */
 .auth-wrap {
     display: flex;
-    height: 700px;
+    height: 100vh;
+}
+
+.auth-wrap2 {
+    display: flex;
+    height: 110vh;
 }
 
 .auth-wrap section {
     flex: 1;
 }
 
+.auth-wrap2 section {
+    flex: 1;
+}
+
 .auth-wrap section:nth-child(1) {
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+}
+
+.auth-wrap2 section:nth-child(1) {
     background-image: url(../img/bg.jpg);
     background-size: cover;
 }
@@ -26,211 +40,6 @@ body {
     width: 100%;
     height: 100%;
     opacity: 0.8;
-}
-
-.right-side {
-    position: relative;
-    width: 40vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.right-side .card-wrapper {
-    position: absolute;
-    width: 350px;
-    height: 90%;
-}
-
-.card-wrapper img {
-    width: 12vw;
-}
-
-.card-wrapper .title-section {
-    margin-top: 1px;
-    display: flex;
-    flex-direction: column;
-}
-
-.title-section .title-text {
-    font-size: 24px;
-    font-weight: 600;
-}
-
-.title-section .sub-title-text {
-    margin-top: 1px;
-    padding-bottom: 5px;
-    font-size: 14px;
-    font-weight: 14px;
-}
-
-.title-section .sub-title-text a {
-    color: #FF1693;
-    text-decoration: none;
-}
-
-.card-wrapper .form-container {
-    margin-top: 2px;
-}
-
-.card-wrapper .form-container form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.card-wrapper .form-container form input[type='text'],
-.card-wrapper .form-container form input[type='password'] {
-    width: 315px;
-    height: 55px;
-    border-radius: 15px;
-    border: 1px solid #828282;
-    background: #FFFFFF;
-    padding-left: 25px;
-    font-size: 14px;
-    color: #414141;
-    letter-spacing: 1px;
-    font-weight: 400;
-    outline: none;
-}
-
-.card-wrapper .form-container form input:focus {
-    outline: 1px solid #676767;
-}
-
-.card-wrapper .form-container .check-section p {
-    align-self: flex-end;
-    color: #FF1693;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-}
-
-.form-container form a {
-    color: #FF1693;
-    text-decoration: none;
-    text-align: right;
-    font-weight: 600;
-}
-
-.card-wrapper .form-container button {
-    margin-top: 15px;
-    width: 340px;
-    height: 50px;
-    border-radius: 15px;
-    border: 0;
-    background: #ED65AB;
-    box-shadow: 0 8px 10px #dfa0bf;
-    font-size: 16px;
-    font-weight: 600;
-    color: #FFFFFF;
-    cursor: pointer;
-}
-
-.card-wrapper .form-container button a {
-    color: #FFFFFF;
-}
-
-.card-wrapper .form-container button:hover {
-    background: #F23F9F;
-}
-
-.form-container .alternative-signin {
-    font-family: "Poppins", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-    color: rgba(55, 58, 66, 1);
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 15px;
-    margin-right: 20px;
-}
-
-.form-container .alternative-signin-icon {
-    text-align: center;
-    margin-right: 20px;
-}
-
-.form-container .alternative-signin-btn {
-    cursor: pointer;
-    border-radius: 10px;
-    border: 1px solid rgb(242, 63, 159);
-    height: 52px;
-    width: 95px;
-    background-color: white;
-}
-
-.form-container .alternative-signin-btn img {
-    width: 40px;
-}
-
-@media (min-width:320px) and (max-width:1024px) {
-    .auth-wrap {
-        height: 0px;
-    }
-
-    .card-wrapper img {
-        width: 30vw;
-    }
-
-    .card-wrapper {
-        margin-left: 15px;
-        margin-right: 100px;
-        margin-top: 50px;
-    }
-
-    .card-wrapper .title-text {
-        font-size: 15px;
-    }
-
-    .card-wrapper .sub-title-text {
-        font-size: 11px;
-    }
-
-    .card-wrapper .form-container {
-        margin-top: 5px;
-    }
-
-    .card-wrapper .form-container form input[type='text'],
-    .card-wrapper .form-container form input[type='password'] {
-        width: 220px;
-        height: 40px;
-    }
-
-    .card-wrapper .form-container > form > button {
-        width: 250px;
-        height: 45px;
-    }
-
-    .form-container form a {
-        margin-right: 65px;
-        font-size: 12px;
-    }
-
-    .form-container .alternative-signin {
-        margin-top: 30px;
-        margin-right: 100px;
-    }
-
-    .form-container .alternative-signin-icon {
-        margin-right: 90px;
-    }
-}
-
-/* Forgot Password */
-.auth-wrap2 {
-    display: flex;
-    height: 100vh;
-}
-
-.auth-wrap2 section {
-    flex: 1;
-}
-
-.auth-wrap2 section:nth-child(1) {
-    background-image: url(../img/bg.jpg);
-    background-size: cover;
 }
 
 .auth-wrap2 .overlay {
@@ -354,6 +163,19 @@ body {
     align-items: flex-start;
     justify-content: center;
     gap: 50px;
+}
+
+.event-side .event-date-side .btn-left {
+    width: 45px;
+    height: 45px;
+    border: none;
+    background: #ffffff;
+    box-shadow: 0px 2px 15px rgba(26, 60, 68, 0.08);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 .event-side .event-date-side .btn-right {

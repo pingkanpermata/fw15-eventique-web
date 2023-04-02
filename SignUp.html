@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/index.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
   <title>Sign Up</title>
 </head>
 <body>
@@ -12,28 +14,47 @@
     <section>
       <div class="overlay"></div>
     </section>
-    <section class="right-side">
-      <div class="card-wrapper">
-        <img src="./assets/img/event_black.png" alt="logo" />
-        <div class="title-section">
-          <p class="title-text">Sign Up</p>
-          <p class="sub-title-text">Already have an account ? <a href="./SignIn.html">Log in</a></p>
+    <section class="w-full lg:basis-2/5 mt-5 px-11 xl:px-24 2xl:px-36">
+      <div class="w-full flex flex-col gap-3">
+        <div class="flex justify-start items-center gap-3 mb-0">
+          <div style="width:12vw">
+            <a href="index.html">
+            <img src="./assets/img/event_black.png" alt="" />
+            </a>
+          </div>
         </div>
-        <div class="form-container">
-          <form>
-            <input type="text" placeholder="Full Name" />
-            <input type="text" placeholder="email" />
-            <input type="password" placeholder="Password" />
-            <input type="password" placeholder="Confirm password" />
-            <div class="check-section" style="display: flex; gap: 15px">
-              <input type="checkbox" />
-              <p style="color: #FF1693">Accept terms an conditions</p>
-            </div>
-            <button type="submit"><a href="SignIn.html">Sign Up</a></button>
-          </form>
-        </div>
+        <div class="text-2xl font-semibold tracking-[1px] text-[#373A42]">Sign Up</div>
+        <div class="text-sm font-semibold tracking-[0.5px] text-[#373A42] mb-5">Already have an account? <a class="text-[#FB1494] hover:text-[#000000]" href="SignIn.html">Log In</a></div>
+        <form class="flex flex-col gap-3">
+          <div class="text-sm tracking[0.5]">
+            <input class="w-full h-12 px-3 outline-[#C1C5D0] border-2 rounded-xl" type="text" name="" placeholder="Username" />
+          </div>
+          <div class="text-sm tracking[0.5]">
+            <input class="w-full h-12 px-3 outline-[#C1C5D0] border-2 rounded-xl" type="email" name="" placeholder="Email" />
+          </div>
+          <div class="text-sm tracking[0.5] relative">
+            <input class="w-full h-12 px-3 outline-[#C1C5D0] border-2 rounded-xl" type="password" name="" placeholder="Password" />
+            <div class="absolute top-3 right-4 text-[#4c3f91]"><i data-feather="eye"></i></div>
+          </div>
+          <div class="text-sm tracking[0.5] relative">
+            <input class="w-full h-12 px-3 outline-[#C1C5D0] border-2 rounded-xl" type="password" name="" placeholder="Confirm Password" />
+            <div class="absolute top-3 right-4 text-[#4c3f91]"><i data-feather="eye"></i></div>
+          </div>
+          <div class="flex items-center gap-3.5">
+            <div><input type="checkbox" name="" id="" /></div>
+            <div class="self-end text-sm text-[#FB1494] font-semibold tracking[0.5] my-2">Accept terms and condition</div>
+          </div>
+          <div>
+            <button type="submit" class="shadow-for-all-button w-full h-14 rounded-xl bg-[#F23F9F] hover:bg-[#FB1494] text-base font-semibold tracking-[1px] text-white">
+              <a href="SignIn.html">Sign Up</a>
+            </button>
+          </div>
+        </form>
       </div>
     </section>
   </main>
+  <script>
+    feather.replace();
+  </script>
 </body>
 </html>

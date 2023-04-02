@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
     <title>Forgot Password</title>
 </head>
 
@@ -14,19 +16,30 @@
         <section>
             <div class="overlay"></div>
         </section>
-        <section class="right-side">
-            <div class="card-wrapper">
-                <img src="./assets/img/event_black.png" alt="logo" />
-                <div class="title-section">
-                    <p class="title-text">Forgot Password</p>
-                    <p class="sub-title-text">You'll get mail soon on your email</a></p>
+        <section class="w-full lg:basis-2/5 mt-24 px-11 xl:px-24 2xl:px-36">
+            <div class="w-full flex flex-col gap-3">
+                <div class="flex justify-start items-center gap-3 mb-0">
+                    <div style="width:12vw">
+                        <a href="index.html">
+                            <img src="./assets/img/event_black.png" alt="" />
+                        </a>
+                    </div>
                 </div>
-                <div class="form-container">
-                    <form>
-                        <input type="text" placeholder="email" />
-                        <button type="submit"><a href="SignIn.html">Send</a></button>
-                    </form>
+                <div class="text-2xl font-semibold tracking-[1px] text-[#373A42]">Forgot Password</div>
+                <div class="text-sm font-medium tracking-[0.5px] text-[#373A42] mb-8">You’ll get mail soon on your email
                 </div>
+                <form class="flex flex-col gap-3.5">
+                    <div class="text-sm tracking[0.5]">
+                        <input class="w-full h-14 px-3 outline-[#C1C5D0] border-2 rounded-xl" type="email" name=""
+                            placeholder="Email" />
+                    </div>
+                    <div>
+                        <button type="submit"
+                        class="shadow-for-all-button w-full h-12 rounded-xl bg-[#F23F9F] hover:bg-[#FB1494] text-base font-semibold tracking-[1px] text-white">
+                        <a href="SignIn.html">Send</a>
+                    </button>
+                    </div>
+                </form>
             </div>
         </section>
     </main>

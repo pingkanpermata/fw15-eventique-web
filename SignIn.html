@@ -6,42 +6,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
     <title>Sign In</title>
 </head>
 
 <body>
-    <main class="auth-wrap">
+    <main class="auth-wrap2">
         <section>
             <div class="overlay"></div>
         </section>
-        <section class="right-side">
-            <div class="card-wrapper">
-                <img src="./assets/img/event_black.png" alt="logo" />
-                <div class="title-section">
-                    <p class="title-text">Sign In</p>
-                    <p class="sub-title-text">Hi, Welcome back to Eventique!</p>
+        <section class="w-full lg:basis-2/5 mt-5 px-11 xl:px-24 2xl:px-36">
+            <div class="w-full flex flex-col gap-3">
+                <div class="flex justify-start items-center gap-3 mb-0">
+                    <div style="width:12vw">
+                        <a href="index.html">
+                            <img src="./assets/img/event_black.png" alt="" />
+                        </a>
+                    </div>
                 </div>
-                <div class="form-container">
-                    <form>
-                        <input type="text" placeholder="Username" />
-                        <input type="text" placeholder="email" />
-                        <input type="password" placeholder="Password" />
-                        <a href="ForgotPass.html">Forgot your password ?</a>
-                        <button type="submit"><a href="Home.html">Sign In</a></button>
-                    </form>
-                    <p class="alternative-signin">or sign in with</p>
-                    <div class="alternative-signin-icon">
-                        <button class="alternative-signin-btn">
-                            <img src="./assets/img/google.png" alt="google" />
+                <div class="text-2xl font-semibold tracking-[1px] text-[#373A42]">Sign In</div>
+                <div class="text-sm font-semibold tracking-[0.5px] text-[#373A42] mb-2">Hi, Welcome back to Eventique!
+                </div>
+                <form class="flex flex-col gap-3.5">
+                    <div class="text-sm tracking[0.5]">
+                        <input class="w-full h-12 px-3 outline-[#C1C5D0] border-2 rounded-xl" type="text" name=""
+                            placeholder="Username" />
+                    </div>
+                    <div class="text-sm tracking[0.5]">
+                        <input class="w-full h-12 px-3 outline-[#C1C5D0] border-2 rounded-xl" type="email" name=""
+                            placeholder="Email" />
+                    </div>
+                    <div class="text-sm tracking[0.5] relative">
+                        <input class="w-full h-12 px-3 outline-[#C1C5D0] border-2 rounded-xl" type="password" name=""
+                            placeholder="Password" />
+                        <div class="absolute top-4 right-4 text-[#4c3f91]"><i data-feather="eye"></i></div>
+                    </div>
+                    <div class="self-end text-sm text-[#F23F9F] font-semibold tracking[0.5] my-1"><a
+                            href="ForgotPass.html">Forgot Password ?</a>
+                    </div>
+                    <div>
+                        <button type="submit" class="shadow-for-all-button w-full h-12 rounded-xl bg-[#F23F9F] hover:bg-[#FB1494] text-base font-semibold tracking-[1px] text-white">
+                            <a href="Home.html">Sign In</a>
                         </button>
-                        <button class="alternative-signin-btn">
-                            <img src="./assets/img/fb..png" alt="facebook" />
-                        </button>
+                    </div>
+                </form>
+                <div class="flex flex-col items-center justify-center gap-4 mt-3">
+                    <div class="text-sm tracking[0.5] text-[#373A42]">or sign in with</div>
+                    <div class="flex items-center justify-center gap-4">
+                        <div
+                            class="w-24 h-14 flex items-center justify-center rounded-md border-2 border-[#4c3f91] cursor-pointer">
+                            <a href="https://www.google.com/"><img src="./assets/img/google.png" alt="" /></a>
+                        </div>
+                        <div
+                            class="w-24 h-14 flex items-center justify-center rounded-md border-2 border-[#4c3f91] cursor-pointer">
+                            <a href="https://www.facebook.com/"><img src="./assets/img/fb..png" alt="" /></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <script>
+        feather.replace();
+    </script>
 </body>
 
 </html>
