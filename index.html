@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="icon" type="icon" href="./assets/img/ticket-icon.png">
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Home</title>
+    <title>Welcome to Eventique</title>
 </head>
 
 <body>
@@ -23,7 +24,8 @@
         <div class="hidden md:block basis:1/2">
             <ul class="flex justify-center gap-5 lg:gap-12 text-sm font-semibold tracking-[1px]">
                 <li class="cursor-pointer text-[#FB1494] hover:text-[#000000]"><a href="#">Home</a></li>
-                <li class="cursor-pointer text-[#FB1494] hover:text-[#000000]"><a href="SignIn.html">Create Event</a></li>
+                <li class="cursor-pointer text-[#FB1494] hover:text-[#000000]"><a href="SignIn.html">Create Event</a>
+                </li>
                 <li class="cursor-pointer text-[#FB1494] hover:text-[#000000]"><a href="#">Location</a></li>
             </ul>
         </div>
@@ -335,7 +337,7 @@
                 </div>
             </div>
         </div>
-        <div class="category-side">
+        <!-- <div class="category-side">
             <div class="btn-category">
                 <button>Category</button>
             </div>
@@ -429,6 +431,111 @@
                     </button>
                 </div>
             </div>
+        </div> -->
+        <div class="event-category-container">
+            <div class="btn-event-category">
+                <button>Category</button>
+            </div>
+            <div class="title-event-category">Browse Event By Category</div>
+            <div class="wrap-nav-category">
+                <div class="nav-event-category">
+                    <ul>
+                        <li>Music</li>
+                        <li>Arts</li>
+                        <li>Outdoors</li>
+                        <li>Workshop</li>
+                        <li>Sport</li>
+                        <li>Festival</li>
+                        <li>Fashion</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="wrap-category-banner">
+                <div class="event-category-banner-container">
+                    <button class="btn-left">
+                        <img src="./assets/img/arrow-left.png" alt="" />
+                    </button>
+                    <div class="event-category-banner">
+                        <img src="./assets/img/event-1.png" alt="" />
+                        <div class="text">
+                            <div class="attendance">
+                                <div class="img-profile">
+                                    <img src="https://i.pravatar.cc/25" alt="" />
+                                </div>
+                                <div class="img-profile">
+                                    <img src="https://i.pravatar.cc/26" alt="" />
+                                </div>
+                                <div class="img-profile">
+                                    <img src="https://i.pravatar.cc/27" alt="" />
+                                </div>
+                                <div class="img-profile">
+                                    <img src="https://i.pravatar.cc/28" alt="" />
+                                </div>
+                            </div>
+                            <div class="date">Wed, 15 Nov, 4:00 PM</div>
+                            <div class="title"><a href="./EventDetail.html">Sights & Sounds Exhibition</a></div>
+                        </div>
+                        <div class="blocking-effect"></div>
+                    </div>
+                    <div class="event-category-banner">
+                        <img src="./assets/img/event-2.png" alt="" />
+                        <div class="text">
+                            <div class="attendance">
+                                <div class="img-profile">
+                                    <img src="https://i.pravatar.cc/29" alt="" />
+                                </div>
+                                <div class="img-profile">
+                                    <img src="https://i.pravatar.cc/30" alt="" />
+                                </div>
+                                <div class="img-profile">
+                                    <img src="https://i.pravatar.cc/31" alt="" />
+                                </div>
+                                <div class="img-profile">
+                                    <img src="https://i.pravatar.cc/32" alt="" />
+                                </div>
+                            </div>
+                            <div class="date">Wed, 15 Nov, 4:00 PM</div>
+                            <div class="title"><a href="./EventDetail.html">See it in Gold Class</a></div>
+                        </div>
+                        <div class="blocking-effect"></div>
+                    </div>
+                    <div class="event-category-banner">
+                        <img src="./assets/img/event-1.png" alt="" />
+                        <div class="text">
+                            <div class="attendance">
+                                <div class="img-profile">
+                                    <img src="https://i.pravatar.cc/33" alt="" />
+                                </div>
+                                <div class="img-profile">
+                                    <img src="https://i.pravatar.cc/34" alt="" />
+                                </div>
+                                <div class="img-profile">
+                                    <img src="https://i.pravatar.cc/35" alt="" />
+                                </div>
+                                <div class="img-profile">
+                                    <img src="https://i.pravatar.cc/36" alt="" />
+                                </div>
+                            </div>
+                            <div class="date">Wed, 15 Nov, 4:00 PM</div>
+                            <div class="title"><a href="./EventDetail.html">Sights & Sounds Exhibition</a></div>
+                        </div>
+                        <div class="blocking-effect"></div>
+                    </div>
+                    <button class="btn-right">
+                        <img src="./assets/img/arrow-right.png" alt="" />
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="btn-navigation-left-right-wrap">
+            <div class="btn-navigation-left-right">
+                <button class="btn-left">
+                    <img src="./assets/img/arrow-left-ic.svg" alt="" />
+                </button>
+                <button class="btn-right">
+                    <img src="./assets/img/arrow-right-ic.svg" alt="" />
+                </button>
+            </div>
         </div>
         <div class="partner-side">
             <div class="btn-partner">
@@ -464,103 +571,107 @@
         </div>
     </div>
     <footer>
-        <div class="w-[100%] flex flex-col items-start md:items-center justify-start md:justify-center px-9 md:px-11 xl:px-60 2xl:px-80">
-        <div class="w-[100%] flex flex-col md:flex-row justify-center md:justify-between gap-8 lg:gap-32 pt-11 mb-7">
-            <div>
-                <div class="flex justify-start items-center w-auto md:w-48 gap-3.5">
-                    <div class="block">
-                        <img src="./assets/img/event_black.png" alt="" />
-                    </div>
-                </div>
-                <div class="mt-7 text-sm text-[#373a42] font-semibold tracking-[1px]">Find events you love with our!
-                </div>
-                <div class="flex items-center gap-5 md:gap-0.5 lg:gap-5 mt-4">
-                    <div>
-                        <a href="https://www.facebook.com/pingkanantaresfernandez/"> <img src="./assets/img/fb.png" alt="" /></a>
-                    </div>
-                    <div>
-                        <a href="https://wa.me/6288971081537">
-                            <img src="./assets/img/wa.png" alt="" />
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://www.instagram.com/kikaan.chan/">
-                            <img src="./assets/img/ig.png" alt="" />
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://twitter.com/Bubu_webdev">
-                            <img src="./assets/img/tw.png" alt="" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="flex flex-col gap-5 mt-2">
-                <div class="text-base text-[#373a42] font-semibold tracking-[1px]">Eventique</div>
+        <div
+            class="w-[100%] flex flex-col items-start md:items-center justify-start md:justify-center px-9 md:px-11 xl:px-60 2xl:px-80">
+            <div
+                class="w-[100%] flex flex-col md:flex-row justify-center md:justify-between gap-8 lg:gap-32 pt-11 mb-7">
                 <div>
-                    <ul class="flex flex-col gap-4 text-sm text-[#c1c5d0] font-medium tracking-[1px]">
-                        <li>
-                            <a class="hover:text-[#373a42]" href="#"> About Us </a>
-                        </li>
-                        <li>
-                            <a class="hover:text-[#373a42]" href="#"> Features </a>
-                        </li>
-                        <li>
-                            <a class="hover:text-[#373a42]" href="#"> Blog </a>
-                        </li>
-                        <li>
-                            <a class="hover:text-[#373a42]" href="#"> Payment </a>
-                        </li>
-                        <li>
-                            <a class="hover:text-[#373a42]" href="#"> Mobile App </a>
-                        </li>
-                    </ul>
+                    <div class="flex justify-start items-center w-auto md:w-48 gap-3.5">
+                        <div class="block">
+                            <img src="./assets/img/event_black.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="mt-7 text-sm text-[#373a42] font-semibold tracking-[1px]">Find events you love with our!
+                    </div>
+                    <div class="flex items-center gap-5 md:gap-0.5 lg:gap-5 mt-4">
+                        <div>
+                            <a href="https://www.facebook.com/pingkanantaresfernandez/"> <img src="./assets/img/fb.png"
+                                    alt="" /></a>
+                        </div>
+                        <div>
+                            <a href="https://wa.me/6288971081537">
+                                <img src="./assets/img/wa.png" alt="" />
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/kikaan.chan/">
+                                <img src="./assets/img/ig.png" alt="" />
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://twitter.com/Bubu_webdev">
+                                <img src="./assets/img/tw.png" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-5 mt-2">
+                    <div class="text-base text-[#373a42] font-semibold tracking-[1px]">Eventique</div>
+                    <div>
+                        <ul class="flex flex-col gap-4 text-sm text-[#c1c5d0] font-medium tracking-[1px]">
+                            <li>
+                                <a class="hover:text-[#373a42]" href="#"> About Us </a>
+                            </li>
+                            <li>
+                                <a class="hover:text-[#373a42]" href="#"> Features </a>
+                            </li>
+                            <li>
+                                <a class="hover:text-[#373a42]" href="#"> Blog </a>
+                            </li>
+                            <li>
+                                <a class="hover:text-[#373a42]" href="#"> Payment </a>
+                            </li>
+                            <li>
+                                <a class="hover:text-[#373a42]" href="#"> Mobile App </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-5 mt-2">
+                    <div class="text-base text-[#373a42] font-semibold tracking-[1px]">Features</div>
+                    <div>
+                        <ul class="flex flex-col gap-4 text-sm text-[#c1c5d0] font-medium tracking-[1px]">
+                            <li>
+                                <a class="hover:text-[#373a42]" href="#">Booking</a>
+                            </li>
+                            <li>
+                                <a class="hover:text-[#373a42]" href="#">Create Event</a>
+                            </li>
+                            <li>
+                                <a class="hover:text-[#373a42]" href="#">Discover</a>
+                            </li>
+                            <li>
+                                <a class="hover:text-[#373a42]" href="#">Register</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-5 mt-2">
+                    <div class="text-base text-[#373a42] font-semibold tracking-[1px]">Company</div>
+                    <div>
+                        <ul class="flex flex-col gap-4 text-sm text-[#c1c5d0] font-medium tracking-[1px]">
+                            <li>
+                                <a class="hover:text-[#373a42]" href="#">Partnership</a>
+                            </li>
+                            <li>
+                                <a class="hover:text-[#373a42]" href="#">Help</a>
+                            </li>
+                            <li>
+                                <a class="hover:text-[#373a42]" href="#">Terms of Service</a>
+                            </li>
+                            <li>
+                                <a class="hover:text-[#373a42]" href="#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a class="hover:text-[#373a42]" href="#">Sitemap</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="flex flex-col gap-5 mt-2">
-                <div class="text-base text-[#373a42] font-semibold tracking-[1px]">Features</div>
-                <div>
-                    <ul class="flex flex-col gap-4 text-sm text-[#c1c5d0] font-medium tracking-[1px]">
-                        <li>
-                            <a class="hover:text-[#373a42]" href="#">Booking</a>
-                        </li>
-                        <li>
-                            <a class="hover:text-[#373a42]" href="#">Create Event</a>
-                        </li>
-                        <li>
-                            <a class="hover:text-[#373a42]" href="#">Discover</a>
-                        </li>
-                        <li>
-                            <a class="hover:text-[#373a42]" href="#">Register</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="flex flex-col gap-5 mt-2">
-                <div class="text-base text-[#373a42] font-semibold tracking-[1px]">Company</div>
-                <div>
-                    <ul class="flex flex-col gap-4 text-sm text-[#c1c5d0] font-medium tracking-[1px]">
-                        <li>
-                            <a class="hover:text-[#373a42]" href="#">Partnership</a>
-                        </li>
-                        <li>
-                            <a class="hover:text-[#373a42]" href="#">Help</a>
-                        </li>
-                        <li>
-                            <a class="hover:text-[#373a42]" href="#">Terms of Service</a>
-                        </li>
-                        <li>
-                            <a class="hover:text-[#373a42]" href="#">Privacy Policy</a>
-                        </li>
-                        <li>
-                            <a class="hover:text-[#373a42]" href="#">Sitemap</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="md:self-start flex-1 my-7 text-base text-[#5a7184] font-semibold tracking-[1px]">&copy; 2023 Eventique
-            All Rights Reserved</div>
+            <div class="md:self-start flex-1 my-7 text-base text-[#5a7184] font-semibold tracking-[1px]">&copy; 2023
+                Eventique
+                All Rights Reserved</div>
     </footer>
     <script>
         feather.replace();
